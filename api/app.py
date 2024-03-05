@@ -7,6 +7,7 @@ template_dir = os.path.join(template_dir, 'src', 'templates')
 
 app = Flask(__name__, template_folder = template_dir)
 
+#Adicionar
 @app.route('/add', methods=['POST'])
 def Add():
     nome = request.form['nome']
