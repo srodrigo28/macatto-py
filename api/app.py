@@ -43,6 +43,7 @@ def home():
     cursor.close()
     return render_template('admin-list.html', data=insertObject)
 
+#Remover
 @app.route('/delete/<string:id>')
 def delete(id):
     cursor = db.database.cursor()
